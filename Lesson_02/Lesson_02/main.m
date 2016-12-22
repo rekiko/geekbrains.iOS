@@ -38,7 +38,7 @@ int myFunc (int arg1, int arg2, CalcType arg3){
 	}
 	return var;
 }
-
+// ********2_END********
 
 int main() {
 	
