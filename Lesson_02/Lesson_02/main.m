@@ -40,10 +40,26 @@ int myFunc (int arg1, int arg2, CalcType arg3){
 }
 // ********2_END********
 
+//	********4_START********
+
+NSUInteger factorial(int argument){
+	if (argument<=1)
+		return 1;
+	else{
+		return argument*factorial(argument-1);}
+}
+
+
+NSUInteger quadMultiplier (NSUInteger arg) {
+	return arg*4;
+}
+
+//	********4_END********
+
+
 int main() {
 	
-	
-	//	********3_START********
+//	********3_START********
 	int a = 10;
 	int b = 5;
 	int result;
@@ -55,12 +71,74 @@ int main() {
 	NSLog(@"Результат %i * %i равно %i", a, b, result);
 	result = myFunc(a, b, divide);
 	NSLog(@"Результат %i / %i равно %i", a, b, result);
-	//	********3_END********
+//	********3_END********
+
+	
+	NSLog(@" === Начало 5-го задания === ");
+	
+	
+//	********5_START********
+	
+	for (int i=1; i<=20; i++) {
+		if (quadMultiplier(i)%3 == 0)
+		{NSLog(@"Число %li кратно трём", quadMultiplier(i));}
+		else
+		{NSLog(@"%li", quadMultiplier(i));}
+	}
+	
+//	********5_END********
+	
+	
+	NSLog(@" === Начало 6-го задания === ");
+	
+	
+//	********6_START********
+	
+	for (int i=1; i<=20; i++) {
+		int count = 20 - i;
+		if (quadMultiplier(i)%3 == 0)
+		{NSLog(@"Число %li кратно трём", quadMultiplier(i));
+			NSLog(@"Осталось %i итераций ", count);}
+		else
+		{NSLog(@"%li", quadMultiplier(i));
+			NSLog(@"Осталось %i итераций ", count);}
+	}
+	
+//	********6_END********
+	
+	
+	NSLog(@" === Начало 7-го задания === ");
+	
+	
+//	********7_START********
+	
+	for (int i=1; i<=20; i++) {
+		int count = 20 - i;
+		if (quadMultiplier(i) == 16) {
+			NSLog(@"%i*4=16, end of cycle", i);
+			break;
+		}else{
+			if (quadMultiplier(i)%3 == 0)
+			{NSLog(@"Число %li кратно трём", quadMultiplier(i));
+				NSLog(@"Осталось %i итераций ", count);}
+			else
+				{NSLog(@"%li", quadMultiplier(i));
+					continue;
+					NSLog(@"Осталось %i итераций ", count);}
+		}
+	}
+	
+//	********7_END********
+	
+	NSLog(@" === Начало 8-го задания === ");
+	
+//	********8_START********
+	
+	NSUInteger fact = factorial(10);
+	NSLog(@"Факториал равен %li", fact);
+	
+//	********8_END********
 	
 	
 	return 0;
 }
-
-
-
-
