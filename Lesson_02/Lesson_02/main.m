@@ -10,6 +10,10 @@
 
 
 // ********1_START********
+//Создайте собственный перечисляемый тип (typedef enum) CalculationType, содержащий
+//4 математических действия — сложение, вычитание, умножение и деление.
+
+
 typedef enum {
 	amount,
 	subtract,
@@ -19,6 +23,12 @@ typedef enum {
 // ********1_END********
 
 // ********2_START********
+//Напишите функцию, возвращающую int и принимающую в качестве аргументов три
+//переменные: первое число, второе число и тип математической операции. Для простоты
+//сделайте числа переменными типа int. Внутри функции, в зависимости от значения
+//переменной типа CalculationType, выполните соответствующую математическую
+//операцию с числами и верните результат.
+
 int var;
 
 int myFunc (int arg1, int arg2, CalcType arg3){
@@ -40,7 +50,9 @@ int myFunc (int arg1, int arg2, CalcType arg3){
 }
 // ********2_END********
 
-//	********4_START********
+// ********9_START********
+//Напишите ф-цию  рекурсивное вычисление факториала
+
 
 NSUInteger factorial(int argument){
 	if (argument<=1)
@@ -48,7 +60,9 @@ NSUInteger factorial(int argument){
 	else{
 		return argument*factorial(argument-1);}
 }
+// ********9_END********
 
+//	********4_START********
 
 NSUInteger quadMultiplier (NSUInteger arg) {
 	return arg*4;
