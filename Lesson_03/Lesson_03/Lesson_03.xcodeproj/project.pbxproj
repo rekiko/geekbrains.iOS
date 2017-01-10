@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED7CF9771E0F37CD007F77BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CF9761E0F37CD007F77BB /* main.m */; };
+		EDFB62261E24384200886F0B /* Orange.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB62251E24384200886F0B /* Orange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		ED7CF9731E0F37CD007F77BB /* Lesson_03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesson_03; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7CF9761E0F37CD007F77BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDFB62241E24384200886F0B /* Orange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Orange.h; path = ../Orange.h; sourceTree = "<group>"; };
+		EDFB62251E24384200886F0B /* Orange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Orange.m; path = ../Orange.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		ED7CF9751E0F37CD007F77BB /* Lesson_03 */ = {
 			isa = PBXGroup;
 			children = (
+				EDFB62241E24384200886F0B /* Orange.h */,
+				EDFB62251E24384200886F0B /* Orange.m */,
 				ED7CF9761E0F37CD007F77BB /* main.m */,
 			);
 			path = Lesson_03;
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7CF9771E0F37CD007F77BB /* main.m in Sources */,
+				EDFB62261E24384200886F0B /* Orange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 				ED7CF97C1E0F37CD007F77BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
