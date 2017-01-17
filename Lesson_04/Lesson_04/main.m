@@ -13,7 +13,7 @@
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-		Circle *circle = [[Circle alloc] init];
+		Circle *circle = [[Circle alloc] initializeWithParam: (getRandomNumber(5,10))];
 		circle->width=16;
 		circle->height=10;
 		
