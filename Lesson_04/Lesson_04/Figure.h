@@ -12,6 +12,7 @@
 	@public
 	int	width;
 	int	height;
+	Figure* next;
 }
 -(float)	square;
 -(float)	perimetr;
